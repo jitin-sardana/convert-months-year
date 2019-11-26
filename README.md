@@ -12,18 +12,28 @@ npm install --save convert-months-year
 
 ## Usage
 
+```bash
+This library has below two methods that returns number of months and years as Object.
+```
+- getYearsFromMonth
+> This method accept the number of months and returns the years.
+
+- getMonthsFromYear
+> This method accept the number of years and returns the months.
+
+
 ```jsx
-import React, { Component } from 'react'
+import YM from 'convert-months-year';
 
-import MyComponent from 'convert-months-year'
+console.log(YM.getYearsFromMonth(10)); //Output: {years: 0, months: 10}
+console.log(YM.getYearsFromMonth('10')); //Output: {years: 0, months: 10}
+console.log(YM.getYearsFromMonth('15')); //Output: {years: 1, months: 3}
 
-class Example extends Component {
-  render () {
-    return (
-      <MyComponent />
-    )
-  }
-}
+console.log(YM.getMonthsFromYear(2)); //Output : {months: 24}
+console.log(YM.getMonthsFromYear('2')); //Output : {months: 24}
+console.log(YM.getMonthsFromYear(1.5)); //Output : {months: 17}
+console.log(YM.getMonthsFromYear('1.5')); //Output : {months: 17}
+
 ```
 
 ## License

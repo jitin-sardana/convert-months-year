@@ -1,22 +1,17 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-
-import styles from './styles.css'
-
-export default class ExampleComponent extends Component {
-  static propTypes = {
-    text: PropTypes.string
+export default class {
+  static getYearsFromMonth(value) {
+    return {
+      years:  parseInt(value, 10 ) > 12 ? value / 12 | 0 : 0,
+      months:  parseInt(value, 10 ) > 12 ? value % 12 : parseInt(value, 10)
+    }
   }
-
-  render() {
-    const {
-      text
-    } = this.props
-
-    return (
-      <div className={styles.test}>
-        Example Component: {text}
-      </div>
-    )
+  static getMonthsFromYear(value) {
+    return {
+      months: typeof(value) === 'string' && value.indexOf('.') >= 0 ?
+      parseInt(value.split('.')[0]*12, 10) + parseInt(value.split('.')[1], 10) :
+      Number(value) === value && value % 1 !== 0 ?
+      parseInt(value.toString().split('.')[0]*12, 10) + parseInt(value.toString().split('.')[1], 10) :
+      value*12
+    }
   }
 }
