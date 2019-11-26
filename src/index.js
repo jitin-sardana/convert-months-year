@@ -14,4 +14,7 @@ export default class {
       value*12
     }
   }
+  static daysInMonth(month, year) { 
+    return new Date(year, month, 0).getDate(); 
+}
 }
