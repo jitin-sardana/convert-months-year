@@ -1,7 +1,5 @@
 # convert-months-year
 
-> 
-
 [![NPM](https://img.shields.io/npm/v/convert-months-year.svg)](https://www.npmjs.com/package/convert-months-year) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
@@ -15,19 +13,21 @@ npm install --save convert-months-year
 ```bash
 This library has below methods that returns number of months and years as Object.
 ```
-- getYearsFromMonth
+- **getYearsFromMonth**
 > This method accept the number of months and returns the years.
 
-- getMonthsFromYear
+- **getMonthsFromYear**
 > This method accept the number of years and returns the months.
 
-- daysInMonth
+- **daysInMonth**
 > This method accept two arguments, first is month(MM) and second is year(YYYY) and returns the number of days.
+
+- **isLeapYear**
+> This method accept one arguments which is year(YYYY) and returns true or false.
 
 
 ```jsx
 import YM from 'convert-months-year';
-
 
 Usage of getYearsFromMonth
 
