@@ -1,5 +1,7 @@
 # convert-months-year
 
+> This utility library provides multiple functionalities like covert number of months into years, convert years into number of months, number of days in a month of year, year is leap year or not etc.
+
 [![NPM](https://img.shields.io/npm/v/convert-months-year.svg)](https://www.npmjs.com/package/convert-months-year) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
@@ -25,9 +27,12 @@ This library has below methods that returns number of months and years as Object
 - **isLeapYear**
 > This method accept one arguments which is year(YYYY) and returns true or false.
 
+> **This can be used with import or require**
 
 ```jsx
-import YM from 'convert-months-year';
+import YM from 'convert-months-year'
+
+var YM = require('convert-months-year');
 
 Usage of getYearsFromMonth
 
