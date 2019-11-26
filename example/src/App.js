@@ -12,8 +12,11 @@ export default class App extends Component {
     console.log(YM.getMonthsFromYear('2')); //Output : {months: 24}
     console.log(YM.getMonthsFromYear(1.5)); //Output : {months: 17}
     console.log(YM.getMonthsFromYear('1.5')); //Output : {months: 17}
-    console.log(YM.daysInMonth("02", "2017"));
+    console.log(YM.daysInMonth("02", "2017")); //Output : 28
+    console.log(YM.daysInMonth("02", "2016")); //Output : 29
     console.log(YM.daysInMonth("01", "2019")) //Output : 31
+    console.log(YM.isLeapYear("2020")); //Output : true
+    console.log(YM.isLeapYear("2019")); //Output : false
   }
   render () {
     return (

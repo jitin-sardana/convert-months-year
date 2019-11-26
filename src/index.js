@@ -16,5 +16,8 @@ export default class {
   }
   static daysInMonth(month, year) { 
     return new Date(year, month, 0).getDate(); 
-}
+  }
+  static isLeapYear(year){
+    return ((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0);
+  }
 }

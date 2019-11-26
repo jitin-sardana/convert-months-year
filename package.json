@@ -1,6 +1,6 @@
 {
   "name": "convert-months-year",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "author": "jitin-sardana",
   "license": "MIT",
@@ -62,6 +62,10 @@
     "months to year",
     "convert months to year",
     "days in a month",
-    "months into year"
+    "months into year",
+    "get days in month",
+    "number of months",
+    "is leap Year",
+    "leap year"
   ]
 }
