@@ -22,9 +22,9 @@ export default class App extends Component {
 
     console.log(YM.getNumberOfWeekEnds("2018", "12")); //Output : {saturdays: 4, sundays: 5, saturdaysDates: Array(4), sundaysDates: Array(5)}
 
-    console.log(YM.getRemanningDaysInMonth()); //Output : 3
-    
-    console.log(YM.getRemanningDaysInYear()); //Output : 34
+    console.log(YM.getRemainingDaysInMonth()); //Output : 3
+
+    console.log(YM.getRemainingDaysInYear()); //Output : 34
   }
   render () {
     return (

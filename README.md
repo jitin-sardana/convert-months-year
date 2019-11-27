@@ -1,6 +1,6 @@
 # convert-months-year
 
-> This utility library provides multiple functionalities like covert number of months into years, convert years into number of months, number of days in a month of year, year is leap year or not, get number of weekends etc.
+> This utility library provides multiple functionalities like covert number of months into years, convert years into number of months, number of days in a month of year, year is leap year or not, get number of weekends, get remaining days in month or year etc.
 
 [![NPM](https://img.shields.io/npm/v/convert-months-year.svg)](https://www.npmjs.com/package/convert-months-year) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -12,9 +12,6 @@ npm install --save convert-months-year
 
 ## Usage
 
-```bash
-This library has below methods that returns number of months and years as Object.
-```
 - **getYearsFromMonth**
 > This method accept the number of months and returns the years.
 
@@ -30,10 +27,10 @@ This library has below methods that returns number of months and years as Object
 - **getNumberOfWeekEnds**
 > This method accept two arguments first is year(YYYY) and second is month(MM) and returns the number of saturdays and sundays with date.
 
-- **getRemanningDaysInMonth**
+- **getRemainingDaysInMonth**
 > This method returns the number of days left in current month.
 
-- **getRemanningDaysInYear**
+- **getRemainingDaysInYear**
 > This method returns the number of days left in current year.
 
 ```jsx
@@ -76,11 +73,13 @@ console.log(YM.getNumberOfWeekEnds("2019", "11")) //Output : {saturdays: 5, sund
 console.log(YM.getNumberOfWeekEnds("2019", "12")) //Output : {saturdays: 4, sundays: 5, saturdaysDates: Array(4), sundaysDates: Array(5)}
 
 
-Usage of getRemanningDaysInMonth
-console.log(YM.getRemanningDaysInMonth() //Output: 3
+Usage of getRemainingDaysInMonth
 
-Usage of getRemanningDaysInYear
-console.log(YM.getRemanningDaysInYear() //Output: 34
+console.log(YM.getRemainingDaysInMonth() //Output: 3
+
+Usage of getRemainingDaysInYear
+
+console.log(YM.getRemainingDaysInYear() //Output: 34
 
 ```
 

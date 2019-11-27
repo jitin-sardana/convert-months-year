@@ -1,6 +1,6 @@
 {
   "name": "convert-months-year",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "author": "jitin-sardana",
   "license": "MIT",
@@ -71,6 +71,7 @@
     "get sundays",
     "get weekends",
     "number of weekends",
-    "weekend dates"
+    "weekend dates",
+    "remaining days"
   ]
 }
