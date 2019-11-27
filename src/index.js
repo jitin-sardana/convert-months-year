@@ -18,6 +18,20 @@ module.exports = class {
     return new Date(year, month, 0).getDate(); 
   }
   static isLeapYear(year){
-  return ((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0);
-}
+    return ((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0);
+  }
+  static getNumberOfWeekEnds(year, mon) {
+    let saturdays = [];
+    let sundays = [];
+    const month = mon - 1;
+    for (let i = 0; i <= new Date(year, month, 0).getDate(); i++) {    
+        let date = new Date(year, month, i);
+        if (date.getDay() == 6 && date.getMonth() === parseInt(month, 10)){
+          saturdays.push(date);
+        } else if (date.getDay() == 0 && date.getMonth() === parseInt(month, 10)) {
+          sundays.push(date);    
+        }
+    };
+  return {saturdays : saturdays.length, sundays: sundays.length, saturdaysDates: saturdays, sundaysDates: sundays }
+  }
 }

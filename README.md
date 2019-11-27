@@ -1,6 +1,6 @@
 # convert-months-year
 
-> This utility library provides multiple functionalities like covert number of months into years, convert years into number of months, number of days in a month of year, year is leap year or not etc.
+> This utility library provides multiple functionalities like covert number of months into years, convert years into number of months, number of days in a month of year, year is leap year or not, get number of weekends etc.
 
 [![NPM](https://img.shields.io/npm/v/convert-months-year.svg)](https://www.npmjs.com/package/convert-months-year) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -27,11 +27,14 @@ This library has below methods that returns number of months and years as Object
 - **isLeapYear**
 > This method accept one arguments which is year(YYYY) and returns true or false.
 
-> **This can be used with import or require**
-
+- **getNumberOfWeekEnds**
+> This method accept two arguments first is year(YYYY) and second is (MM) and returns number saturdys and sundays with date.
 ```jsx
+
+ES6
 import YM from 'convert-months-year'
 
+ES5
 var YM = require('convert-months-year');
 
 Usage of getYearsFromMonth
@@ -58,6 +61,12 @@ Usage of isLeapYear
 
 console.log(YM.isLeapYear("2019")); //Output : false
 console.log(YM.isLeapYear("2020")); //Output : true
+
+Usage of isLeapYear
+
+console.log(YM.getNumberOfWeekEnds("2019", "11")) //Output : {saturdays: 5, sundays: 4, saturdaysDates: Array(5), sundaysDates: Array(4)}
+
+console.log(YM.getNumberOfWeekEnds("2019", "12")) //Output : {saturdays: 4, sundays: 5, saturdaysDates: Array(4), sundaysDates: Array(5)}
 
 ```
 

@@ -1,6 +1,6 @@
 {
   "name": "convert-months-year",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "author": "jitin-sardana",
   "license": "MIT",
@@ -66,6 +66,11 @@
     "get days in month",
     "number of months",
     "is leap Year",
-    "leap year"
+    "leap year",
+    "get saturdays",
+    "get sundays",
+    "get weekends",
+    "number of weekends",
+    "weekend dates"
   ]
 }

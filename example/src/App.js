@@ -17,6 +17,7 @@ export default class App extends Component {
     console.log(YM.daysInMonth("01", "2019")) //Output : 31
     console.log(YM.isLeapYear("2020")); //Output : true
     console.log(YM.isLeapYear("2019")); //Output : false
+    console.log(YM.getNumberOfWeekEnds("2018", "12")); //Output : {saturdays: 4, sundays: 5, saturdaysDates: Array(4), sundaysDates: Array(5)}
   }
   render () {
     return (
