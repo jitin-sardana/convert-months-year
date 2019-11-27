@@ -34,4 +34,16 @@ module.exports = class {
     };
   return {saturdays : saturdays.length, sundays: sundays.length, saturdaysDates: saturdays, sundaysDates: sundays }
   }
+  static getRemanningDaysInMonth() {
+    let date = new Date();
+    let time = new Date(date.getTime());
+    time.setMonth(date.getMonth() + 1);
+    time.setDate(0);
+    return (time.getDate() > date.getDate()) ? time.getDate() - date.getDate() : 0;
+  }
+  static getRemanningDaysInYear() {
+    const today=new Date();
+    const lastDayOfYear=new Date(today.getFullYear(), 11, 31);
+    return Math.ceil((lastDayOfYear.getTime()-today.getTime())/(1000*60*60*24));
+  }
 }

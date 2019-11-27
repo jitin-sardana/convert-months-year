@@ -28,7 +28,14 @@ This library has below methods that returns number of months and years as Object
 > This method accept one arguments which is year(YYYY) and returns true or false.
 
 - **getNumberOfWeekEnds**
-> This method accept two arguments first is year(YYYY) and second is (MM) and returns number saturdys and sundays with date.
+> This method accept two arguments first is year(YYYY) and second is month(MM) and returns the number of saturdays and sundays with date.
+
+- **getRemanningDaysInMonth**
+> This method returns the number of days left in current month.
+
+- **getRemanningDaysInYear**
+> This method returns the number of days left in current year.
+
 ```jsx
 
 ES6
@@ -62,11 +69,18 @@ Usage of isLeapYear
 console.log(YM.isLeapYear("2019")); //Output : false
 console.log(YM.isLeapYear("2020")); //Output : true
 
-Usage of isLeapYear
+Usage of getNumberOfWeekEnds
 
 console.log(YM.getNumberOfWeekEnds("2019", "11")) //Output : {saturdays: 5, sundays: 4, saturdaysDates: Array(5), sundaysDates: Array(4)}
 
 console.log(YM.getNumberOfWeekEnds("2019", "12")) //Output : {saturdays: 4, sundays: 5, saturdaysDates: Array(4), sundaysDates: Array(5)}
+
+
+Usage of getRemanningDaysInMonth
+console.log(YM.getRemanningDaysInMonth() //Output: 3
+
+Usage of getRemanningDaysInYear
+console.log(YM.getRemanningDaysInYear() //Output: 34
 
 ```
 
